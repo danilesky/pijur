@@ -1,0 +1,1113 @@
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  font-family: 'Roboto';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-image: url(/img/bg.png);
+  background-color: #f2f2f2;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 80%;
+  top: 0;
+  right: 0;
+  background: radial-gradient(80.44% 85.31% at 73.47% 2.86%, #DEC975 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: -1;
+}
+
+body::after {
+  content: '';
+  background: radial-gradient(100% 49.92% at 0% 50.08%, #99A8D0 0%, rgba(255, 255, 255, 0) 100%);
+  position: fixed;
+  width: 20%;
+  height: 80%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.page-content {
+  position: relative;
+  top: 35vh;
+  -webkit-transition: top 1s ease;
+  transition: top 1s ease;
+}
+
+h1 {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 64px;
+  color: #8A2828;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: #1B2C51;
+}
+
+h3 {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1B2C51;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1B2C51;
+  max-width: 480px;
+}
+
+a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: #8A2828;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+b {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 42px;
+    line-height: 53px;
+  }
+  h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer {
+  position: relative;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  position: relative;
+  background: #1B2C51;
+  width: 100%;
+  padding: 0;
+  margin-top: 170px;
+  padding: 67px 0;
+}
+
+footer .behind_left {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url("/img/footer_bg.png");
+  width: 310px;
+  height: 304px;
+}
+
+footer .behind_right {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("/img/footer_bg.png");
+  width: 310px;
+  height: 304px;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-image: url(/img/bg_line.svg);
+  top: -27px;
+  left: 0;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer h2 {
+  color: white;
+  max-width: 780px;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+footer .info {
+  margin-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 12px;
+}
+
+footer .socials a {
+  margin-right: 25px;
+}
+
+footer .socials a:last-child {
+  margin-right: 0;
+}
+
+footer .brands {
+  z-index: 1;
+}
+
+footer .brands .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .brands .title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  margin: auto;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+footer .brands .title::before {
+  width: 165px;
+  height: 1px;
+  content: '';
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#1B2C51), to(white));
+  background: linear-gradient(90deg, #1B2C51 0%, white 100%);
+  top: 11px;
+  left: -186px;
+}
+
+footer .brands .title::after {
+  width: 165px;
+  height: 1px;
+  content: '';
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#1B2C51));
+  background: linear-gradient(90deg, white 0%, #1B2C51 100%);
+  top: 11px;
+  right: -186px;
+}
+
+footer .brands .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 69px;
+}
+
+footer .brands .brand span {
+  margin-top: 17px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: #8B96AC;
+}
+
+.pijur_intro {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pijur_intro .top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: url(/img/intro/top.png);
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 1s ease,-webkit-transform 1s ease;
+  transition: opacity 1s ease,-webkit-transform 1s ease;
+  transition: transform 1s ease,opacity 1s ease;
+  transition: transform 1s ease,opacity 1s ease,-webkit-transform 1s ease;
+  opacity: 1;
+}
+
+.pijur_intro .middle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: url(/img/intro/middle.png);
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  opacity: 1;
+}
+
+.pijur_intro .bottom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: url(/img/intro/back.png);
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  opacity: 1;
+}
+
+.animation .top {
+  -webkit-transform: scale(5);
+          transform: scale(5);
+  opacity: 0;
+  -webkit-transition: opacity 1s ease , -webkit-transform 1s ease;
+  transition: opacity 1s ease , -webkit-transform 1s ease;
+  transition: transform 1s ease , opacity 1s ease;
+  transition: transform 1s ease , opacity 1s ease , -webkit-transform 1s ease;
+}
+
+.animation .middle {
+  -webkit-transform: scale(5);
+          transform: scale(5);
+  opacity: 0;
+  -webkit-transition: opacity 1s ease , -webkit-transform 2s ease;
+  transition: opacity 1s ease , -webkit-transform 2s ease;
+  transition: transform 2s ease , opacity 1s ease;
+  transition: transform 2s ease , opacity 1s ease , -webkit-transform 2s ease;
+}
+
+.animation .bottom {
+  -webkit-transform: scale(5);
+          transform: scale(5);
+  opacity: 0;
+  -webkit-transition: opacity 1s ease , -webkit-transform 3s ease;
+  transition: opacity 1s ease , -webkit-transform 3s ease;
+  transition: transform 3s ease , opacity 1s ease;
+  transition: transform 3s ease , opacity 1s ease , -webkit-transform 3s ease;
+}
+
+.container {
+  max-width: 1210px;
+  margin: auto;
+  padding: 0 2%;
+}
+
+.leavesbox {
+  position: absolute;
+}
+
+.leavesbox.left {
+  top: 0;
+  left: 0;
+}
+
+.leavesbox.right {
+  top: 0;
+  right: 0;
+}
+
+.contact_us {
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  padding: 10px 10px 10px 27px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #162D54;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 47px;
+  right: 20px;
+  bottom: 60px;
+  z-index: 2;
+  width: 232px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.contact_us.hide {
+  width: 70px;
+  padding: 10px 10px 10px 18px;
+}
+
+.contact_us.hide span {
+  opacity: 0;
+}
+
+.contact_us.hide:hover {
+  width: 232px;
+  padding: 10px 10px 10px 27px;
+}
+
+.contact_us.hide:hover span {
+  opacity: 1;
+}
+
+.contact_us span {
+  position: absolute;
+  right: 30px;
+  width: 132px;
+  -webkit-transition: opacity 0.2s ease , left 0.5s ease;
+  transition: opacity 0.2s ease , left 0.5s ease;
+}
+
+.contact_us::before {
+  content: '';
+  background-image: url(/img/post.svg);
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 30px;
+}
+
+.pijur_logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.pijur_cans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pijur_cans img {
+  width: 100%;
+}
+
+.pijur_cans_right {
+  margin-top: 100px;
+  position: relative;
+  top: 100px;
+  -webkit-transition: top 1s ease;
+  transition: top 1s ease;
+}
+
+.bobula {
+  position: absolute;
+  z-index: -1;
+}
+
+.bobula_black {
+  width: 126px;
+  height: 59px;
+  background: url(/img/bobula_black.png);
+  top: 0;
+  right: 30%;
+}
+
+.bobula_yellow_big {
+  width: 69px;
+  height: 67px;
+  background: url(/img/bobula_yellow.png);
+  top: 5%;
+  left: 30%;
+}
+
+.bobula_yellow_mid {
+  width: 48px;
+  height: 47px;
+  background-image: url(/img/bobula_yellow.png);
+  background-size: contain;
+  top: 25%;
+  right: 25%;
+}
+
+.bobula_yellow_small {
+  width: 26px;
+  height: 25px;
+  background-image: url(/img/bobula_yellow.png);
+  background-size: contain;
+  top: 35%;
+  right: 45%;
+}
+
+.quote {
+  position: absolute;
+  width: 250px;
+  padding: 11% 15%;
+  background-image: url(/img/quote.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.quote h3 {
+  margin: 0;
+}
+
+.pijur_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 540px;
+}
+
+.pijur_about_mid {
+  position: relative;
+  max-width: 780px;
+  top: 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.pijur_about_right {
+  position: relative;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  right: 0;
+}
+
+.pijur_about_right.animate {
+  right: 30%;
+}
+
+.pijur_about_right .quote {
+  top: -120px;
+  left: -140px;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+.pijur_about_left {
+  left: 0;
+  position: relative;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.pijur_about_left.animate {
+  left: 30%;
+}
+
+.pijur_health {
+  margin-top: 200px;
+}
+
+.pijur_health .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pijur_health .behind {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.pijur_health_box {
+  margin-top: 10%;
+  z-index: 1;
+}
+
+.behind.right {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+.pijur_technology {
+  margin-top: 190px;
+}
+
+.pijur_technology .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pijur_technology_left {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.pijur_shop {
+  margin-top: 220px;
+}
+
+.pijur_shop .container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.box {
+  background: #FFFFFF;
+  border-radius: 5px;
+  max-width: 480px;
+  margin-top: 38px;
+}
+
+.box .shipping {
+  position: absolute;
+  width: 91px;
+  top: -10px;
+  right: 10px;
+}
+
+.box_row {
+  position: relative;
+  padding: 23px 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.box_row img {
+  width: 50px;
+}
+
+.box_row:last-child {
+  border-bottom: none;
+}
+
+.box_row_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 27px;
+  position: relative;
+}
+
+.box_row_text .red {
+  font-size: 16px;
+  line-height: 32px;
+  color: #8A2828;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.box_row_text .big {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  color: #162D54;
+}
+
+.box_row_text .no_underline {
+  text-decoration: none;
+}
+
+.pijur_contact_form {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #162d5478;
+  z-index: 10000;
+}
+
+.pijur_contact_form_wrapper {
+  position: relative;
+  width: 50%;
+  max-width: 760px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2% 5%;
+  background: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.pijur_contact_form_wrapper h1 {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.pijur_contact_form_wrapper p {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.pijur_contact_form form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pijur_contact_form .input_wrapper {
+  position: relative;
+}
+
+.pijur_contact_form .input_wrapper input {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: #FFFFFF;
+  border: 2px solid #162D54;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background: none;
+  z-index: 2;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+
+.pijur_contact_form .input_wrapper input:focus ~ label {
+  top: -3px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.pijur_contact_form button {
+  background: #8A2828;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  padding: 2% 4%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.pijur_contact_form .small {
+  font-size: 14px;
+  line-height: 22px;
+  color: #162D54;
+  text-align: left;
+  max-width: initial;
+}
+
+.pijur_contact_form label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #162D54;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 1;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+
+.pijur_contact_form .close_button {
+  position: absolute;
+  right: 19px;
+  top: 16px;
+  content: url(/img/close.svg);
+  width: 15px;
+  height: 15px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+  footer::before {
+    top: -14px;
+  }
+  h1, h2, h3, h4, p {
+    text-align: center;
+  }
+  .pijur_about {
+    position: relative;
+  }
+  .pijur_about_mid {
+    position: absolute;
+  }
+  .pijur_about_right {
+    right: -50%;
+  }
+  .pijur_about_right.animate {
+    right: 0%;
+  }
+  .pijur_about_left {
+    left: -50%;
+  }
+  .pijur_about_left.animate {
+    left: 0%;
+  }
+  .behind {
+    padding-right: 20%;
+  }
+  .behind.right {
+    padding-left: 20%;
+    padding-right: 0;
+  }
+  .pijur_health {
+    margin-top: 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pijur_health .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .pijur_health .behind {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: relative;
+  }
+  .pijur_health .behind img {
+    width: 100%;
+  }
+  .pijur_technology img {
+    width: 100%;
+  }
+  .pijur_technology .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pijur_technology_left {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .pijur_shop {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pijur_shop .behind {
+    position: relative;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 100px;
+  }
+  .pijur_shop .behind img {
+    width: 100%;
+  }
+  .pijur_shop .container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .pijur_contact_form_wrapper {
+    width: 90%;
+  }
+  .red {
+    font-size: 14px !important;
+  }
+  .big {
+    font-size: 24px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .info .mid {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  footer .info .mid span {
+    display: none;
+  }
+  footer .info .left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 30px;
+  }
+  footer .info .right {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 30px;
+  }
+  footer .brand {
+    margin-right: 42px !important;
+  }
+  footer .brand img {
+    height: 60px;
+  }
+  footer .brand span {
+    font-size: 12px;
+  }
+  footer .brands {
+    margin-bottom: 150px;
+  }
+  footer .brands .title::after {
+    right: -45px;
+    width: 36px;
+  }
+  footer .brands .title::before {
+    left: -45px;
+    width: 36px;
+  }
+  .pijur_logo img {
+    width: 120px;
+  }
+  .pijur_about_right .quote {
+    top: -97px;
+    left: -120px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .pijur_cans {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .behind_right {
+    width: 218px;
+    height: 218px;
+  }
+  .leavesbox.left img {
+    width: 240px;
+  }
+  .leavesbox.right img {
+    width: 240px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

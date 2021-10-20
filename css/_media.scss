@@ -1,0 +1,160 @@
+@media only screen and (max-width: 950px){
+    footer::before {
+        top: -14px;
+    }
+    h1 , h2 , h3 , h4 , p{
+        text-align: center;
+    }
+    .pijur_about{
+        position: relative;
+        &_mid{
+            position: absolute;
+        }
+        &_right{
+            right: -50%;
+            &.animate{
+                right:0%;
+            }
+        }
+        &_left{
+            left: -50%;
+            &.animate{
+                left:0%;
+            }
+        }
+    }
+    .behind{
+        padding-right: 20%;
+        &.right{
+            padding-left: 20%;
+            padding-right: 0;
+        }
+    }
+    .pijur_health{
+        margin-top: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .container{
+            justify-content: center;
+            order: 0;
+        }
+        .behind{
+            order: 1;
+            position: relative;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .pijur_technology{
+        img{
+            width: 100%;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        &_left{
+            align-self: center;
+        }
+    }
+    .pijur_shop{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        .behind{
+            position: relative;
+            order: 2;
+            margin-top: 100px;
+            img{
+                width: 100%;
+            }
+        }
+        .container{
+            order: 1;
+        }
+    }
+    .pijur_contact_form_wrapper{
+        width: 90%;
+    }
+    .red{
+        font-size: 14px!important;
+    }
+    .big{
+        font-size: 24px!important;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    footer{
+        .info{
+            flex-direction: column;
+            .mid{
+                order: 3;
+                span{
+                    display: none;
+                }
+            }
+            .left{
+                order: 1;
+                margin-bottom: 30px;
+            }
+            .right{
+                order: 2;
+                margin-bottom: 30px;
+            }
+        }
+        .brand{
+            margin-right: 42px!important;
+            img{
+                height: 60px;
+            }
+            span{
+                font-size: 12px;
+            }
+        }
+        .brands{
+            margin-bottom: 150px;
+            .title::after {
+                right: -45px;
+                width: 36px;
+            }
+            .title::before {
+                left: -45px;
+                width: 36px;
+            }
+        }
+    }
+    .pijur_logo{
+        img{
+            width: 120px;
+        }
+    }
+    .pijur_about_right .quote {
+        top: -97px;
+        left: -120px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .pijur_cans{
+        flex-direction: column;
+    }
+    footer .behind_right {
+        width: 218px;
+        height: 218px;
+    }
+    .leavesbox{
+        &.left{
+            img{
+                width: 240px;
+            }
+        }
+        &.right{
+            img{
+                width: 240px;
+            }
+        }
+    }    
+}

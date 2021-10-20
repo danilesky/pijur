@@ -1,0 +1,370 @@
+.container{
+    max-width: 1210px;
+    margin: auto;
+    padding: 0 2%;
+}
+
+.leavesbox{
+    position: absolute;
+    &.left{
+        top: 0;
+        left: 0;
+    }
+    &.right{
+        top: 0;
+        right: 0;
+    }
+}
+
+.contact_us{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    padding: 10px 10px 10px 27px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    color: #162D54;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 47px;
+    right: 20px;
+    bottom: 60px;
+    z-index: 2;
+    width: 232px;
+    transition: 0.5s ease;
+    &.hide{
+        width: 70px;
+        padding: 10px 10px 10px 18px;
+        span{
+            opacity: 0;
+        }
+        &:hover{
+            width: 232px;
+            padding: 10px 10px 10px 27px;
+            span{
+                opacity: 1;
+            }
+        }
+    }
+    span{
+        position: absolute;
+        right: 30px;
+        width: 132px;
+        transition: opacity 0.2s ease , left 0.5s ease;
+    }
+    &::before{
+        content: '';
+        background-image: url(/img/post.svg);
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 35px;
+        height: 30px;
+    }
+}
+
+.pijur_logo{
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pijur_cans{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    img{
+        width: 100%;
+    }
+    &_right{
+        margin-top: 100px;
+        position: relative;
+        top: 100px;
+        transition: top 1s ease;
+    }    
+}
+
+.bobula{
+    position: absolute;
+    z-index: -1;
+    &_black{
+        width: 126px;
+        height: 59px;
+        background: url(/img/bobula_black.png);
+        top: 0;
+        right: 30%;
+    }
+    &_yellow_big{
+        width: 69px;
+        height: 67px;
+        background: url(/img/bobula_yellow.png);
+        top: 5%;
+        left: 30%;
+    }
+    &_yellow_mid{
+        width: 48px;
+        height: 47px;
+        background-image: url(/img/bobula_yellow.png);
+        background-size: contain;
+        top: 25%;
+        right: 25%;
+    }
+    &_yellow_small{
+        width: 26px;
+        height: 25px;
+        background-image: url(/img/bobula_yellow.png);
+        background-size: contain;
+        top: 35%;
+        right: 45%;
+    }
+}
+
+.quote{
+    position: absolute;
+    width: 250px;
+    padding: 11% 15%;
+    background-image: url(/img/quote.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    h3{
+        margin : 0;
+    }
+}
+
+.pijur_about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 540px;
+    &_mid{
+        position: relative;
+        max-width: 780px;
+        top: 0;
+        transition: 0.8s ease;
+    }
+    &_right{
+        position: relative;
+        transition: 0.8s ease;
+        right: 0;
+        &.animate{
+            right: 30%;
+        }
+        .quote{
+            top: -120px;
+            left: -140px;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+    }
+    &_left{
+        left: 0;
+        position: relative;
+        transition: 0.8s ease;
+        &.animate{
+            left: 30%;
+        }
+    }
+}
+
+.pijur_health{
+    margin-top: 200px;
+    .container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .behind{
+        position: absolute;
+        left: 0;
+        z-index: 0;
+    }
+    &_box{
+        margin-top: 10%;
+        z-index: 1;
+    }
+}
+
+.behind.right{
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.pijur_technology{
+    margin-top: 190px;
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    &_left{
+        align-self: flex-end;
+    }
+}
+
+.pijur_shop{
+    margin-top: 220px;
+    .container{
+        justify-content: flex-start;
+    }
+}
+.box{
+    background: #FFFFFF;
+    border-radius: 5px;
+    max-width: 480px;
+    margin-top: 38px;
+    .shipping{
+        position: absolute;
+        width: 91px;
+        top: -10px;
+        right: 10px;
+    }
+    &_row{
+        position: relative;
+        img{
+            width: 50px;
+        }
+        padding: 23px 36px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #EAEAEA;
+        &:last-child{
+            border-bottom: none;
+        }
+        &_text{
+            display: flex;
+            flex-direction: column;
+            margin-left: 27px;
+            position: relative;
+            .red{
+                font-size: 16px;
+                line-height: 32px;
+                color: #8A2828;
+                font-style: normal;
+                font-weight: normal;
+            }
+            .big{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 28px;
+                line-height: 32px;
+                text-align: center;
+                color: #162D54;
+            }
+            .no_underline{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.pijur_contact_form{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background: #162d5478;
+    z-index: 10000;
+    &_wrapper{
+        position: relative;
+        width: 50%;
+        max-width: 760px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        padding: 2% 5%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        h1{
+            margin-bottom: 20px;
+            font-size: 48px;
+        }
+        p{
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+    }
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .input_wrapper{
+        position: relative;
+        input{
+            position: relative;
+            width: 100%;
+            height: 60px;
+            background: #FFFFFF;
+            border: 2px solid #162D54;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background: none;
+            z-index: 2;
+            padding: 15px 20px;
+            font-size: 18px;
+            &:focus ~ label{
+                top: -3px;
+                transition: 0.3s ease;
+            }
+        }
+    }
+    button{
+        background: #8A2828;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        padding: 2% 4%;
+        align-self: flex-start;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+    .small{
+        font-size: 14px;
+        line-height: 22px;
+        color: #162D54;
+        text-align: left;
+        max-width: initial;
+    }
+    label{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        color: #162D54;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        z-index: 1;
+        transition: top 0.3s ease;
+    }
+    .close_button{
+        position: absolute;
+        right: 19px;
+        top: 16px;
+        content: url(/img/close.svg);
+        width: 15px;
+        height: 15px;
+        z-index: 10;
+        cursor: pointer;
+    }
+}
