@@ -59,7 +59,7 @@
     }
     &::before{
         content: '';
-        background-image: url(/img/post.svg);
+        background-image: url(../img/post.svg);
         position: relative;
         background-size: contain;
         background-repeat: no-repeat;
@@ -96,21 +96,21 @@
     &_black{
         width: 126px;
         height: 59px;
-        background: url(/img/bobula_black.png);
+        background: url(../img/bobula_black.png);
         top: 0;
         right: 30%;
     }
     &_yellow_big{
         width: 69px;
         height: 67px;
-        background: url(/img/bobula_yellow.png);
+        background: url(../img/bobula_yellow.png);
         top: 5%;
         left: 30%;
     }
     &_yellow_mid{
         width: 48px;
         height: 47px;
-        background-image: url(/img/bobula_yellow.png);
+        background-image: url(../img/bobula_yellow.png);
         background-size: contain;
         top: 25%;
         right: 25%;
@@ -118,7 +118,7 @@
     &_yellow_small{
         width: 26px;
         height: 25px;
-        background-image: url(/img/bobula_yellow.png);
+        background-image: url(../img/bobula_yellow.png);
         background-size: contain;
         top: 35%;
         right: 45%;
@@ -129,7 +129,7 @@
     position: absolute;
     width: 250px;
     padding: 11% 15%;
-    background-image: url(/img/quote.svg);
+    background-image: url(../img/quote.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -361,7 +361,7 @@
         position: absolute;
         right: 19px;
         top: 16px;
-        content: url(/img/close.svg);
+        content: url(../img/close.svg);
         width: 15px;
         height: 15px;
         z-index: 10;
